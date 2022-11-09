@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('https://images.saatchiart.com/saatchi/974724/art/7120291/6189615-DXEOKUDJ-7.jpg');
+  background-position: right top;
+  background-attachment: fixed;
+}
+{
+  box-sizing: border-box;
+  border-radius: 1px;
+}
+.headline {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 3px #FF2E2E, 0 0 5px #FF2E2E;
+
+}
+
+.container {
+  padding: 70px;
+  background-color: #F9E9E9;
+  opacity: 0.9;
+  border-radius: 100px;
+}
+
+input[type=name] {
+  width: 29%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 15px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=email],[type=password] {
+  width: 60%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 15px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+ .gender {
+        width: 120px;
+        height: 30px;
+        border: 1px solid #ddd;
+        font-size: 18px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        opacity= 0.8
+      }
+.purpose {
+        width: 120px;
+        height: 30px;
+        border: 1px solid #ddd;
+        font-size: 18px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        opacity= 0.8
+      }
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.registerbtn {
+  background-color: #FF2E2E;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 5px;
+  
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+   
+   <div class="headline">
+    <h1>MASTERPIECE </h1>
+    <h4>Online Art Market Platform For Everyone</h4>
+    <hr>
+    </div>
+    
+<div class="container">
+<h1>Registeration Form</h1>
+    <label for="name"><b>Name</b></label>&nbsp;<br>
+    
+    <input type="name"placeholder="First Name"name="first name" id="first name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="name"placeholder="Last Name" name="last name" id="last name" required><br>
+
+    <label for="email"><b>Email</b></label>&nbsp;<br>
+    <input type="email" placeholder="Example@email.com" name="email" id="email" required><br>
+
+    <label for="psw"><b>Password</b></label>&nbsp;<br>
+    <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+   
+   <label for="gender"><b>Gender</b></label>&nbsp;
+   <select class="gender">
+      <option>Choose</option>
+      <option>Female</option>
+      <option>Male</option>
+      <option>Bisexual</option>
+    </select>
+    
+    &nbsp;<label for="Purpose"><b>Purpose</b></label>&nbsp;
+   <select class="purpose">&nbsp;
+      <option>Choose</option>
+      <option>Artist</option>
+      <option>Seller</option>
+      <option>Buyer</option>
+      <option>Not Sure Yet</option>
+    </select>
+    
+
+    <br><br><button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+</form>
+</body>
+</html>
