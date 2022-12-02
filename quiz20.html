@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+.footer {
+padding: 100px;
+text-align: center;
+background: olive;
+margin: 1px;
+}
+
+
+.columnbody {
+float: left;
+width: 30%;
+padding: 180px;
+}
+
+
+.rowbody:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width: 480px) {
+.columnbody {
+width: 100%;
+}
+}
+
+
+.column {
+float: left;
+width: 25%;
+padding: 30px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width: 480px) {
+.column {
+width: 50%;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="footer">
+
+</div>
+
+<div class="rowbody">
+<div class="columnbody" style="background-color:blue; border: 5px solid white;">
+
+</div>
+
+<div class="columnbody" style="background-color:blue; border: 5px solid white;">
+
+</div>
+
+<div class="columnbody" style="background-color:blue; border: 5px solid white;">
+
+</div>
+
+</div>
+
+
+<div class="">
+<div class="row">
+<div class="column" style="background-color:#ccc;border: 5px solid white;">
+</div>
+
+<div class="column" style="background-color:#ccc;border: 5px solid white;">
+</div>
+
+<div class="column" style="background-color:#ccc;border: 5px solid white;">
+</div>
+
+<div class="column" style="background-color:#ccc;border: 5px solid white;">
+</div>
+</div>
+
+</body>
+</html>
