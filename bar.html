@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bar.css">
+</head>
+
+<script src="JS/Scripts.js"></script>
+<div id="mySidebar" class="sidebar">
+    <a href="homework.html" class="aligncenter">Home</a>
+    <a href="#" class="aligncenter">Dashboard</a>
+    <a href="#" class="aligncenter">About</a>
+    <a href="#" class="aligncenter">Contact</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+    <h2>Kanyanut Pattapruk</h2>
+    <p></p>
+  </div>
+<script>
+    function openNav() {
+    const sideBarWidth = document.getElementById("mySidebar").style.width;
+    
+    if (!sideBarWidth || sideBarWidth == "0px") {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    } else if (sideBarWidth !== "0px") {
+        document.getElementById("mySidebar").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+    }
+}
+</script>
+
+
+
+</body>
+
+</html>
+
