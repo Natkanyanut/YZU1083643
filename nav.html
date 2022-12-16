@@ -80,19 +80,17 @@ body {
   <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
 </div>
 
-<script>
+  <script>
 function openNav() {
-    const sideBarWidth = document.getElementById("mySidebar").style.width;
-    
-    if (!sideBarWidth || sideBarWidth == "0px") {
+  if (!sideBarWidth || sideBarWidth == "0px") {
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
     } else if (sideBarWidth !== "0px") {
         document.getElementById("mySidebar").style.width = "0px";
         document.getElementById("main").style.marginLeft = "0px";
     }
-}
 </script>
-   
+  
+
 </body>
 </html> 
